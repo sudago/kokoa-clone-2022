@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Kokoa Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>12:01</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fa-solid fa-battery-full fa-xl"></i>
+            <i class="fa-solid fa-bolt-lightning"></i>
+        </div>
+    </div>
+  
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to Cup Head Talk</h1>
+        <p class="welcome-header__text">
+            If you have a Account, log in with your MONEY or SOUL.
+        </p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+        <!-- form에는 두가지 속성이 있다. action=""과 method=""
+        action은 이것을 클릭? 사용했을 때, 어딘가의 링크로 보내주는 것.
+        method는 post와 get 두가지 방식 중 하나를 쓸 수 있다. 
+        post는 백엔드서버에 정보를 전송해주는 것이라 지금 이 강의에서는 사용 할 수 없다.
+        그래서 우리는 get을 사용할 것이다. 
+        하지만 보안에 취약하다. 
+        그래서 username과 password를 get 방식으로 보내면 안된다.
+        url에 포함되어도 상관없는 정보들을 get방식으로 보내는 것이다.-->
+        <input name="username" type="text" placeholder="MONEY or SOUL">
+        <input name="password" type="text" placeholder="HEART"> 
+        <input type="submit" value="Log In">
+        <a href="#">Find Account or ...</a>
+    </form>
+    <div class="no-mobile">
+        <img class="no-mobile__image" src="images/splash-screen.jpg">
+        <div class="no-mobile__text">
+            <span>Your screen is too big</span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/e2c01c3f81.js" crossorigin="anonymous"></script>
+</body>
+</html>

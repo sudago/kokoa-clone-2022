@@ -1,0 +1,8 @@
+:root {
+ --purple: #6105b8;
+ --horizontal-space: 20px;
+ --background-color: white;
+ --main-border: 1px solid rgba(0, 0, 0, 0.2);
+ --gray: rgba(0, 0, 0, 0.5);
+ --chat__background-color: rgb(214, 176, 252);
+}

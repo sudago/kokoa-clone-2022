@@ -1,0 +1,172 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends - Kokoa Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>24:03</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fa-solid fa-battery-full fa-xl"></i>
+            <i class="fa-solid fa-bolt-lightning"></i>
+        </div>
+
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Friends..?</h1>
+        <div class="screen-header__icons">
+            <span> <i class="fas fa-search fa-lg"></i></span>
+            <span><i class="fa-solid fa-music fa-lg"></i></span>
+            <span class="screen-header__icons__dot">
+                <div class="find__dot"></div>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear fa-lg"></i>
+                </a>
+            </span>
+        </div>
+    </header>
+
+    <a id="friends-display-link">
+        <i class="fa-solid fa-circle-info"></i>
+        Subordinates' Names Display
+        <i class="fa-solid fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="friends-screen">
+        <div class="user-component">
+            <!-- shotcut단축키는 .user-component__column*2 -->
+            <div class="user-component__column">
+                <img src="images/king_dice.png" 
+                class="user-component__avatar user-component__avatar--xl">
+                <div class="user-component__text">
+                    <h4 class="user-component__title">King Dice</h4>
+                    <!-- <h6 class="user-component__subtitle">This text whatever</h6> -->
+                </div>
+            </div>
+            <div class="user-component__column"></div>
+        </div>
+        <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+                <span>Subordinate 3</span>
+                <i class="fa-solid fa-chevron-up fa-xs"></i>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img src="images/cuphead.jpg" 
+                    class="user-component__avatar user-component__avatar--sm">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--not-bold">Cup Head</h4>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <div>
+                        <!-- <span>2</span>
+                        <i class="fa-solid fa-chevron-right fa-xs"></i> -->
+                    </div>
+                </div>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img src="images/mugman.jpg" 
+                    class="user-component__avatar user-component__avatar--sm">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--not-bold">Mug Man</h4>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <div>
+                        <!-- <span>2</span>
+                        <i class="fa-solid fa-chevron-right fa-xs"></i> -->
+                    </div>
+                </div>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img src="images/the_devil.jpg" 
+                    class="user-component__avatar user-component__avatar--sm">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--not-bold">The Devil</h4>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <div>
+                        <!-- <span>2</span>
+                        <i class="fa-solid fa-chevron-right fa-xs"></i> -->
+                    </div>
+                </div>
+            </div>
+     <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+             <span>Channels</span>
+              <i class="fa-solid fa-chevron-up fa-xs"></i>
+           </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img src="images/giant_bomb.png" 
+                    class="user-component__avatar user-component__avatar--sm">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--not-bold">Giant Bomb</h4>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <div>
+                        <span>2</span>
+                        <i class="fa-solid fa-chevron-right fa-xs"></i>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- nav>ul>li*4>a 이렇게 쓰면 자동으로 form이 완성됨. -->
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="fa-solid fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">3</span>
+                    <i class="fa-regular fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fas fa-search fa-2x"></i>
+                    </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <div class="nav__dot"></div>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </i></a>
+            </li>
+        </ul>
+    </nav>
+    <div id="splash-screen">
+        <img src="images/splash.png">
+    </div>
+    <div class="no-mobile">
+        <img class="no-mobile__image" src="images/splash-screen.jpg">
+        <div class="no-mobile__text">
+            <span>Your screen is too big</span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/e2c01c3f81.js" crossorigin="anonymous"></script>
+</body>
+</html>

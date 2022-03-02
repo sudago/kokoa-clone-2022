@@ -1,0 +1,221 @@
+#chat-screen {
+    background-color: var(--chat__background-color);
+    height:300vh;
+}
+
+#chat-screen .status-bar {
+    background-color: var(--chat__background-color);
+    z-index: 2;
+}
+
+/* z-index는 포토샵에서 layer의 역할을 함. 
+absolute position과 fixed position에 대해서 설정 할 수 있음.*/
+
+#chat-screen .alt-header {
+    z-index: 1;
+}
+
+#chat-screen .status-bar ,
+#chat-screen .alt-header {
+    top:0;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--chat__background-color);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity:1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    } to {
+        opacity:1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    } to {
+        opacity:1;
+        transform: none;
+    }
+}
+
+.main-chat {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.8s linear;
+}
+.chat__timestamp {
+    color:white;
+    background-color: rgba(116, 13, 175, 0.5);
+    padding: 13px;
+    border-radius: 25px;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+.message-row {
+    opacity: 0;
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+    animation: fadeInLeft 0.8s linear forwards;
+    animation-delay: 0.6s;
+}
+.message-row  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    margin-right: 7px;
+}
+.message__author {
+    margin-bottom: 5px;
+    display: block;
+}
+.message__bubble {
+    background-color: white;
+    padding: 8px 13px;
+    font-size: 18px;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    margin-right: 5px;
+}
+.messgae__info {
+    display: flex;
+    align-items: flex-end;
+
+}
+.message__author,
+.messgae__time {
+    opacity: 0.8;
+    font-size: 14px;
+}
+.message-row--own {
+    opacity: 0;
+    justify-content: flex-end;
+    animation: fadeInRight 0.8s linear forwards;
+}
+.message-row--own:first-child {
+    animation-delay: 0.3s;
+}
+.message-row--own:last-child {
+    animation-delay: 0.9s;
+}
+.message-row--own .message__bubble {
+    background-color: var(--purple);
+    color: white;
+    border-top-right-radius: 0;
+    border-top-left-radius: 15px;
+    margin-right: 0px;
+    margin-left: 5px;
+}
+/* .message-row--own .message__bubble {
+    order: 1;
+}
+.message-row--own .message__time {
+    order: 0;
+} */
+/* 이 속성은 오로지 flex child에게만 적용가능하다. 
+위의 줄과 밑의 줄은 같은 결과값을 내는데, 밑의 줄이 더 코드의 중복이 적음*/
+
+.message-row--own .messgae__info {
+    flex-direction: row-reverse;
+}
+
+.reply {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px 5px 20px;
+    box-sizing: border-box;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .reply .reply__column:first-child {
+    width: 10%;
+  }
+  .reply .reply__column:last-child {
+    width: 90%;
+    position: relative;
+  }
+  
+  .reply__column i {
+    opacity: 0.5;
+  }
+  
+  .reply input {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid var(--chat__background-color);
+    border-radius: 25px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .reply__column:last-child > i,
+  .reply__column:last-child button {
+    position: absolute;
+    right: 7px;
+    top: 0px;
+  }
+  
+  .reply__column:last-child > i {
+    right: 53px;
+    top: 5px;
+  }
+  
+  .reply__column button {
+    color: var(--purple);
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+}
+.reply__column button i {
+    opacity: 0.9;
+  }
+  
+  .reply__column button:focus,
+  .reply__column button:active {
+    outline: none;
+  }
+
+.reply .reply__column:first-child,
+.reply  .fa-face-grin-tongue,
+.reply button {
+    transition: opacity 0.3s ease-in-out;
+}
+
+  /* .reply:focus-within이란 = reply 내부에 어떤 element가 focus 되어있다면... */
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within  .fa-face-grin-tongue,
+.reply:focus-within button {
+      opacity: 0;
+  }
+
+  .reply:focus-within input {
+      width: 90vw;
+      transform: translateX(-10%) translateY(-80px);
+      box-shadow: 5px 5px 5px  var(--purple);
+  }
+
+  .reply:focus-within {
+      transform: translateY(80px);
+  }
