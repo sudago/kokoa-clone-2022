@@ -1,0 +1,63 @@
+.main-box1__song-align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    margin: 25px 0;
+}
+.main-box1__song-align__item {
+    display: flex;
+    justify-content: center;
+}
+.main-box1__song-align__item-album {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.main-box1__song-align__special {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    margin: 25px 0;
+    box-shadow: 0 0.1em 0.8em -0.7em #3f3f3f;
+    /* color: #000000; 
+    이미지 어둡게 어케하는거야,,ㅠㅠㅠ */
+}
+.main-box1__song-align__item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.4;
+}
+.main-box1__song-align__item-text__artist-name {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.4);
+}
+.main-box1__song-align__item-text__song-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #222222;
+}
+.main-box1__song-align__item-icon {
+    color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    right: 11px;
+}
+.main-box1__song-align__item__play-music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.main-box1__song-align__item__play-music .fa-music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 17px;
+    right: 38px;
+    color: white;
+}

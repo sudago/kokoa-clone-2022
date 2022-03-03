@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: tomato;
+  }
+  div {
+    border: 2px solid black;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center ;
+    flex-direction: column;
+  }
+  .wheat {
+    background-color:wheat;
+    width: 150px;
+    height: 150px;
+  }
+  .teal {
+    background-color: teal;
+    border: 2px solid white;
+    width: 30px;
+    height: 30px;
+  }
+  .special {
+    border: 2px dashed white;
+    width: 130px;
+  }

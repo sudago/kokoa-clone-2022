@@ -1,0 +1,72 @@
+.status-bar {
+    background-color: #B195D2;
+  }
+  .status-bar__column {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px 50px 15px;
+    background-color: #B195D2;
+  }
+  .status-bar__column .fa-lg {
+      position: relative;
+      top: 10px;
+  }
+  .search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 20px 30px;
+    margin: 0 27px;
+    color: lightgray;
+    background-color: white;
+    position: relative;
+    top: -30px;
+    font-size: 20px;
+    box-shadow: 0 1em 1em -1em;
+  }
+  .search__bar input::placeholder {
+    color: lightgray;
+  }
+  .books {
+    padding: 17px;
+    display: flex;
+    flex-direction: column;
+  }
+  .books__range {
+    margin: 25px 0;
+  }
+  .books__main {
+    display: flex;
+    justify-content: start;
+  }
+  .books__main-text {
+      width: 170px;
+     height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .books__main-text .fa-star {
+    color: #B195D2;
+  }
+  .books__main-text .fa-gratipay {
+      color: #B195D2;
+  }
+  .books__main-text .buy-icon{
+      width: 170px;
+      display: flex;
+      justify-content: space-between;
+  }
+  .books__main-text .buy  {
+    width: 82px;
+    height: 30px;
+    background-color:#B6B5D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+  }

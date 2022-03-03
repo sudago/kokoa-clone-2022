@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap');
+@import"reset.css";
+@import"main-book.css";
+@import"best-seller.css";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sunflower', sans-serif;
+  width: 340px;
+}
+
+h1{
+  font-size: 20px;
+}
+h3 {
+    font-size: 13px;
+    color: lightgray;
+  }
+  h4 {
+      font-size: 11px;
+      color: white;
+  }
+  img {
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  input[type="text"] {
+    border: none;
+    background-color: white;
+    font-size: 15px;
+  }

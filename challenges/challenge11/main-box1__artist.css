@@ -1,0 +1,64 @@
+.main-box1__artist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box1__artist__image {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    /* x축, y축 , blur확장, 원의 크기 */
+    box-shadow: 0 1em 2em -0.7em #0F5A77;
+}
+
+.main-box1__artist__name {
+    text-align: center;
+    margin: 35px 0;
+    line-height: 30px;
+}
+.main-box1__artist__name__mac-miller {
+    font-weight: 700;
+    font-size: 25px;
+}
+.main-box1__artist__name__genre{
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.main-box1__artist__button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 260px;
+    height: 50px;
+    position: relative;
+    top: -10px;
+}
+.main-box1__artist__button1 {
+    width: 100px;
+    height: 40px;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.main-box1__artist__button2 {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 0.2em 1em -0.7em #3f3f3f;
+}
+.main-box1__artist__button2 .fa-heart {
+    color: #222222;
+    margin-right: 6px;
+}

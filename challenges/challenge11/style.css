@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+@import "reset.css";
+@import "box-setting.css";
+
+@import "main-box1__artist.css";
+@import "main-box1__song.css";
+@import "main-box1__nav.css";
+@import "main-box2.css";

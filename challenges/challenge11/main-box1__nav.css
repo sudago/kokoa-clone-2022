@@ -1,0 +1,35 @@
+.main-bax1__nav {
+    width: 320px;
+    height: 70px;
+    background-color: #222222;
+    border-radius: 35px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+.main-box1__nav-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+}
+.main-box1__nav-align__play-icons {
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.main-box1__nav-align__artist-name{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(119, 116, 116);
+}
+.main-box1__nav-align__song-name {
+ font-size: 17px;
+ font-weight: 600;
+ color: white;
+}

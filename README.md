@@ -1,3 +1,5 @@
-#Kokoa Clone 2022 Update
+#King Dice Talk
 
-HTML & CSS are so much fun! :)
+Clone Kakao Talk :)
+
+Reference = Cup Head
