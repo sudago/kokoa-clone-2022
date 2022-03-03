@@ -1,6 +1,8 @@
 .icon-row {
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
 }
 .icon-row__icon {
     display: flex;
@@ -8,10 +10,10 @@
     align-items: center;
 }
 .icon-row__icon i {
-    font-size: 35px;
+    font-size: 30px;
 }
 .icon-row__icon span {
     margin-top: 18px;
-    width:100px;
+    width: 80px;
      text-align: center;
 }

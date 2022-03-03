@@ -29,6 +29,8 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
+    width:100%;
+    box-sizing: border-box;
 }
 .open-post__title {
     font-weight: 600;
@@ -47,8 +49,8 @@
     margin-top: 7px;
 }
 .open-post__members img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     margin-right: 5px;
 }
