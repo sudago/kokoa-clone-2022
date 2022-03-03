@@ -21,12 +21,13 @@
 body {
     color:#2e363e;
     font-family: 'Open Sans', sans-serif;
+    height: 150vh;
 }
 
-
 .main-screen {
-    padding: 0px var(--horizontal-space);
+    padding: var(--horizontal-space);
     box-sizing: border-box;
+    margin-top: 80px;
 }
 
 .find__dot {

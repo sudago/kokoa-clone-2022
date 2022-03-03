@@ -1,4 +1,7 @@
 .screen-header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,6 +10,7 @@
     margin-top:  25px;
     margin-bottom: 15px;
     background-color: var(--background-color);
+    box-sizing: border-box;
 }
 
 .screen-header__title {

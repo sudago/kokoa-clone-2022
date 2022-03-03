@@ -1,4 +1,7 @@
 .alt-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,6 +9,7 @@
     margin-top:  25px;
     margin-bottom: 15px;
     background-color: var(--background-color);
+    box-sizing: border-box;
 }
 .alt-header__title {
     font-size: 32px;
