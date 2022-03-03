@@ -176,12 +176,12 @@ absolute position과 fixed position에 대해서 설정 할 수 있음.*/
   .reply__column:last-child button {
     position: absolute;
     right: 7px;
-    top: 0.5px;
+    top: 2px;
   }
   
   .reply__column:last-child > i {
     right: 53px;
-    top: 5px;
+    top: 6px;
   }
   
   .reply__column button {
